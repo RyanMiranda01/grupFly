@@ -1,5 +1,4 @@
 # grupFly
-Projeto Gestao de viagens
 
 
 Projeto de sistema de viagens desenvolvido com Java e Spring Boot.
