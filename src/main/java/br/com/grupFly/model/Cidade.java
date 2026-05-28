@@ -59,4 +59,5 @@ public class Cidade {
         this.estado = estado;
     }
 
+
 }

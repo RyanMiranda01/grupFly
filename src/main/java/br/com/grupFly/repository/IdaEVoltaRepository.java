@@ -1,4 +1,7 @@
 package br.com.grupFly.repository;
 
-public interface IdaEVoltaRepository {
+import br.com.grupFly.model.tipoDeViagens.IdaEVolta;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IdaEVoltaRepository extends JpaRepository<IdaEVolta, Long> {
 }

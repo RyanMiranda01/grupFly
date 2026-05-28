@@ -14,11 +14,11 @@ public class IdaEVolta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "origem_id")
     private Localidade origem;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "desino_id")
     private Localidade desino;
 

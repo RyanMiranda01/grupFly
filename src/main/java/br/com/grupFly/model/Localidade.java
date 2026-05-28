@@ -1,5 +1,4 @@
 package br.com.grupFly.model;
-
 import jakarta.persistence.*;
 
 @Entity
@@ -19,7 +18,6 @@ public class Localidade {
     @ManyToOne
     @JoinColumn(name = "cidade_id")
     private Cidade cidade;
-
 
     public Cidade getCidade() {
         return cidade;
@@ -53,8 +51,12 @@ public class Localidade {
         this.pais = pais;
     }
 
-
     public String nomeCompleto() {
-        return cidade.getNome() + ", " + estado.getNome() + ", " + pais.getNome() ;
+        return cidade.getNome() + ", "
+                + estado.getNome() + ", "
+                + pais.getNome() ;
     }
 }
+
+
+
